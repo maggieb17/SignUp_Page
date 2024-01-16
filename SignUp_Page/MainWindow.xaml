@@ -1,0 +1,30 @@
+﻿<Window x:Class="SignUp_Page.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SignUp_Page"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="500">
+    <Grid Background="Honeydew">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <Label Content="Sign Up" Grid.Row="0" FontSize="25" HorizontalContentAlignment="Center" FontFamily="Verdana" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtUsername" Grid.Row="1" Width="250" Height="30" Text="Username" TextAlignment="Center" BorderBrush="Beige" BorderThickness="2"  GotFocus="UsernameClear"/>
+        <TextBox x:Name="txtName" Grid.Row="2" Width="250" Height="30" Text="First Name" TextAlignment="Center" BorderBrush="Beige" BorderThickness="2" GotFocus="FirstNameClear"/>
+        <TextBox x:Name="txtLname" Grid.Row="3" Width="250" Height="30" Text="Last Name" TextAlignment="Center" BorderBrush="Beige" BorderThickness="2" GotFocus="LNameClear"/>
+        <TextBox x:Name="txtEmail" Grid.Row="4" Width="250" Height="30" Text="Email" TextAlignment="Center" BorderBrush="Beige" BorderThickness="2" GotFocus="EmailClear"/>
+        <PasswordBox x:Name="txtPassword" Grid.Row="5" Width="250" Height="30"  BorderBrush="Beige" BorderThickness="2"/>
+        <PasswordBox x:Name="txtPassword2" Grid.Row="6" Width="250" Height="30"   BorderBrush="Beige" BorderThickness="2"/>
+        <Button Grid.Row="7" Width="70" Height="20" Content="Sign Up"  Foreground="Black" Click="Button_Click"/>
+    </Grid>
+</Window>
